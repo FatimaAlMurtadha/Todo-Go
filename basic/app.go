@@ -92,5 +92,24 @@ func main() {
 	answer2 := num3 / num4
 	fmt.Printf("\nThe division: %g", answer2) // 1.8
 
+	// --------------------------------------------
+	// --------------------------------------------
+	// Boolean expressions - logical operators
+	// < > <= >= == !=
+
+	x := 5
+	y := 8
+	val := x > y
+	fmt.Printf("\n%t", val) // false
+
+	w1 := "fatima"
+	w2 := "Fatima"
+	fmt.Printf("\n%t", w1 == w2) // false
+	w2 = "fatima"
+	fmt.Printf("\n%t", w1 == w2) // true
+
+	// ---------------------------------------------
+	// ---------------------------------------------
+	// Chain
 
 }
