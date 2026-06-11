@@ -110,6 +110,24 @@ func main() {
 
 	// ---------------------------------------------
 	// ---------------------------------------------
-	// Chain
+	// Chained Conditionals
+
+	val2 := 9 > 4 && 9 > 11
+	fmt.Printf("\nFirst one: %t", val2) // false
+	
+	val2 = 9 > 4 || 9 > 11
+	fmt.Printf("\nSecond one: %t", val2) // true
+
+	val2 = true || false && false // true
+	fmt.Printf("\nThird one: %t", val2) // true
+
+	val2 = (true || false) && false 
+	fmt.Printf("\nFourth one: %t", val2) // false
+
+	val2 = (true || false) && !false 
+	fmt.Printf("\nFifth one: %t", val2) // true
+
+	val3 := val2 || false
+	fmt.Printf("\nTow variables: %t", val3) // true
 
 }
