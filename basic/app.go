@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"text/scanner"
+	"strconv"
 )
 
 func main() {
@@ -58,14 +58,25 @@ func main() {
 	fmt.Printf("Number binary 533 = %b", 533 ) // 1000010101
 	fmt.Println()
 	fmt.Printf("Number binary 533 = %x", 53393) // d091
-	fmt.Printf("\n My name is %s Al-Murtadha %q", "Fatima", "Go") // My name is Fatima Al-Murtadha "Go"
+	fmt.Printf("\nMy name is %s Al-Murtadha %q", "Fatima", "Go") // My name is Fatima Al-Murtadha "Go"
 
 	// Padding
-	fmt.Printf("\n My name is %9s Al-Murtadha %-9q end", "Fatima", "Go")
+	fmt.Printf("\nMy name is %9s Al-Murtadha %-9q end\n", "Fatima", "Go")
 
-	
+	// Input
+	scanner := bufio.NewScanner(os.Stdin) // A scanner object = Java
 
+	fmt.Println("Enter your name:")
+	scanner.Scan()
+	// input default is string 
+	userInput := scanner.Text()
+	fmt.Printf("Your name is %q ", userInput)
 
+	// Convert
+	fmt.Println("\nEnter a number: ")
+	scanner.Scan()
+	numberInput ,_ := strconv.ParseInt(scanner.Text(), 10, 64)
+	fmt.Printf("The sum is %d", numberInput + 5)
 
 
 
