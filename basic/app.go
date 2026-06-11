@@ -78,6 +78,19 @@ func main() {
 	numberInput ,_ := strconv.ParseInt(scanner.Text(), 10, 64)
 	fmt.Printf("The sum is %d", numberInput + 5)
 
+	// ------------------------------------------------------
+	// ------------------------------------------------------
+	// Arithmetic operations
+
+	var num1 int = 9
+	var num2 int = 20
+	answer := num1 + num2
+	fmt.Printf("\nYour answer is: %d", answer)
+
+	var num3 float32 = 9
+	var num4 float32 = 5
+	answer2 := num3 / num4
+	fmt.Printf("\nThe division: %g", answer2) // 1.8
 
 
 }
