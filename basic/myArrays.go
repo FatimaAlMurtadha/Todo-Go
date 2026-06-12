@@ -43,15 +43,30 @@ func Arrays() {
 	fmt.Println(m) // [0 0 0 0 0]
 
 	// Array range
-	var a []int = [] int {1,2,3,4,5,6,7,8}
+	var a []int = [] int {1,2,3,4,5,6,7,8, 3}
 
 	/*for i := 0 ; i< len(a); i ++ {
 		fmt.Println(a[i])
 	}*/
 
-	for i, element := range a{
-		fmt.Printf("%d: %d", i , element)
+	// i and element == foreach
+	// if we don't want the index so we can delete the i and use instead _ as a placeholder
+
+	for f, element := range a{
+		fmt.Printf("%d: %d \n", f , element) // indexes with values
 	}
+
+	fmt.Println()
+	for j, el := range a {
+		for y, el1 := range a {
+			if el == el1 && j !=y {
+				fmt.Println(el)
+			}
+		}
+	}
+
+	// Maps
+
 
 
 
