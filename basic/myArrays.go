@@ -42,5 +42,19 @@ func Arrays() {
 	m := make([]int, 5)
 	fmt.Println(m) // [0 0 0 0 0]
 
+	// Array range
+	var a []int = [] int {1,2,3,4,5,6,7,8}
+
+	/*for i := 0 ; i< len(a); i ++ {
+		fmt.Println(a[i])
+	}*/
+
+	for i, element := range a{
+		fmt.Printf("%d: %d", i , element)
+	}
+
+
+
+
 
 }

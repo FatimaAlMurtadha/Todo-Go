@@ -44,8 +44,19 @@ func basics() {
 	// --------------------------------------------------------------------
 	//---------------------------------------------------------------------
 	
+	// %d int
+	// %f float
+	// %s string
+	// %t boolean
+	// %v generic - the value as it is
+	// %+v struct with the fields' names
+	// %T the type of the variable
+	// %% procent 
+	// %b binary
+	// %q "..."
+
 	// fmt printing
-	// placeHolder %...
+	// placeHolder %... 
 	fmt.Printf("Hello from GoLang the number %v has type %T", 10, 10)
 	fmt.Println()
 
