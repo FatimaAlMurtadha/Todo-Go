@@ -65,11 +65,33 @@ func Arrays() {
 		}
 	}
 
-	// Maps
+	// Maps == collections == lists == dictionaries
 
+	// string is the keys - int is the values
+	var mp map[string]int = map[string]int {
+		"Fatima": 1001,
+		"Ahmed": 1002,
+		"Sukaina": 1003,
+	}
 
+	// anther way to create the map
+	// mp = make(map[string]int)
 
+	fmt.Println(mp["Fatima"])
+	// mp["Fatima"] = 1009 // update the value of the key
+	mp["Ali"] = 1004 // add new key and value to the map
+	mp["Murtadha"] = 1005
 
+	//delete(mp, "Ali") // delete the key and its value from the map
 
+	// Check if a key
+	val , ok := mp["Khalil"]
 
+	if ok {
+		fmt.Println(val)
+	} else {
+		fmt.Println("Khalil is not on the map")
+	}
+
+	fmt.Println(mp)
 }
