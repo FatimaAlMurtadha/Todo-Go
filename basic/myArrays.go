@@ -5,8 +5,6 @@ import (
 )
 
 func Arrays() {
-	// ------------------------------------------------------------------------------
-	// ------------------------------------------------------------------------------
 	// Arrays
 
 	var arr [5] int 
@@ -23,7 +21,26 @@ func Arrays() {
 	// we can use for loop to iterate over the array as usual
 	// { {1,2}, {3,4} , {5,6}} 2D array
 	arr2D := [3][2]int{{1, 2}, {3, 4}, {5, 6}}
-	fmt.Println(arr2D)
-	fmt.Println(arr2D[1][1]) // 4 == Python
+	fmt.Println("2D array: ",arr2D)
+	fmt.Println("\nIndex [1][1]: " , arr2D[1][1]) // 4 == Python
+
+	// ------------------------------------------------------------------------------
+	// ------------------------------------------------------------------------------
+	// Slices
+	var x [6] int = [6] int {4, 5, 6, 7, 8, 9}
+	var s [] int = x [1:3] // [5, 6]
+
+	fmt.Println("\nThe array is: ",x , "\nThe slice is: ", s)
+	fmt.Println("Length of the slice:  ",len(s)) // 2
+	fmt.Println("Capacity of the slice: " , cap(s)) // 5
+
+	// slice out of the slice
+	fmt.Println(s[1:cap(s)]) // [6 7 8 9]
+	b := append(s, 100)
+	fmt.Println(b) // [5 , 6 , 100]
+
+	m := make([]int, 5)
+	fmt.Println(m) // [0 0 0 0 0]
+
 
 }
