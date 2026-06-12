@@ -130,4 +130,15 @@ func main() {
 	val3 := val2 || false
 	fmt.Printf("\nTow variables: %t", val3) // true
 
+	// if statement ==  !=    >=      <=     >      <    Statment1 || && statment2
+	name := "Ahmed"
+
+	if name == "Sukaina"{ 
+		fmt.Println("\nWelcome Sukaina!")
+	} else if name == "Fatima" {
+		fmt.Println("\nWelcome Fatima")
+	} else{
+		fmt.Println("\nThe name is not Sukaina OR Fatima")
+	}
+
 }
