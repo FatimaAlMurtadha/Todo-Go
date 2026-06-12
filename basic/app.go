@@ -130,7 +130,11 @@ func main() {
 	val3 := val2 || false
 	fmt.Printf("\nTow variables: %t", val3) // true
 
-	// if statement ==  !=    >=      <=     >      <    Statment1 || && statment2
+	// ---------------------------------------------------------------------------
+	// ---------------------------------------------------------------------------
+
+	/* if statement ==  !=    >=      <=     >      <    Statment1 || && statment2
+	*/
 	name := "Ahmed"
 
 	if name == "Sukaina"{ 
@@ -140,5 +144,21 @@ func main() {
 	} else{
 		fmt.Println("\nThe name is not Sukaina OR Fatima")
 	}
+
+	// ------------------------------------------------------------------------------
+	// ------------------------------------------------------------------------------
+
+	// Loops ++   += 
+	b := 0
+	for b < 5 {
+		fmt.Println(b , " ")
+		b ++
+	}
+	// short cut
+	fmt.Println("\nShort cut: ")
+	for t := 0; t <= 5; t++{
+		fmt.Println(t)
+	}
+
 
 }
