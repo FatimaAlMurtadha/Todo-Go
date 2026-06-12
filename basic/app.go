@@ -148,7 +148,7 @@ func main() {
 	// ------------------------------------------------------------------------------
 	// ------------------------------------------------------------------------------
 
-	// Loops ++   += 
+	// Loops ++   += --  -= 
 	b := 0
 	for b < 5 {
 		fmt.Println(b , " ")
@@ -158,7 +158,29 @@ func main() {
 	fmt.Println("\nShort cut: ")
 	for t := 0; t <= 5; t++{
 		fmt.Println(t)
+
+		if t == 4 {
+			break // OR continue
+		}
+		fmt.Println("\nNext line")
 	}
+
+	// switch statment
+	newNum := 12
+	switch newNum {
+		case 1:
+			fmt.Println("Condition 1")
+		case 2:
+			fmt.Println("Condition 2")
+		case 3:
+			fmt.Println("Condition 3")
+		case 10:
+			fmt.Println("Condition 10")
+		default:
+			fmt.Println("The end")
+	
+	}
+
 
 
 }
