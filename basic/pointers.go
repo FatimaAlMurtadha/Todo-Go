@@ -63,13 +63,8 @@ func MyPointers(){
 	fmt.Print("x4 address  - reference address           = ", p)  	 // 0x1f2cf0f8e088 
 	fmt.Println("\nThe box address - pointer address       = ", &p) //  0x1f2cf0f82050 - ITS OWN 
 	fmt.Print("x4 value - and pointer value              = ", *p)  // 10
+
 	
-x4 address  - reference address           = 
-The box address - pointer address       =  
-x4 value - and pointer value              = 10
-
-
-
 	 // p  = x4 address
 	// &p = the box address - pointer address
 	// *p = x4 value
