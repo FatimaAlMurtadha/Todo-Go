@@ -13,5 +13,6 @@ func main() {
 	// Arrays()
 	// myFunctions()
 	// MutableAndImmutable()
-	MyPointers()
+	// MyPointers()
+	StructsAndCustomTypes()
 }
