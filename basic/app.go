@@ -14,5 +14,6 @@ func main() {
 	// myFunctions()
 	// MutableAndImmutable()
 	// MyPointers()
-	StructsAndCustomTypes()
+	// StructsAndCustomTypes()
+	MyMethods()
 }
