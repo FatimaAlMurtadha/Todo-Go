@@ -49,6 +49,30 @@ func MyPointers(){
 	fmt.Println("After assigning setValue2: ",x2) // After assigning setValue2:  Done-2
 
 
+	// Summary
+	var x3 string = "Hi"
+	var pointer *string = &x3 
+	fmt.Println("The reference address: ", pointer, "\nMy pointer address: ",&pointer ,"\nThe pointer value: ", *pointer) 
+
+	x4 := 10
+	p := &x4 
+
+	fmt.Println()
+	fmt.Println("Address x4 = ", &x4) 								   // 0x1f2cf0f8e088
+	fmt.Println("Value x4 = ", x4) 									  // 10
+	fmt.Print("x4 address  - reference address           = ", p)  	 // 0x1f2cf0f8e088 
+	fmt.Println("\nThe box address - pointer address       = ", &p) //  0x1f2cf0f82050 - ITS OWN 
+	fmt.Print("x4 value - and pointer value              = ", *p)  // 10
+	
+x4 address  - reference address           = 
+The box address - pointer address       =  
+x4 value - and pointer value              = 10
+
+
+
+	 // p  = x4 address
+	// &p = the box address - pointer address
+	// *p = x4 value
 
 
 }
