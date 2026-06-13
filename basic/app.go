@@ -11,5 +11,6 @@ func main() {
 	
 	// basics()
 	// Arrays()
-	myFunctions()
+	// myFunctions()
+	MutableAndImmutable()
 }
